@@ -90,6 +90,6 @@ public class BlendshapeAnnotations : MonoBehaviour
             }
         }
         catch { }
-        annotation.Draw(_currentTarget.faceLandmarks, visualizeZ);
+        // annotation.Draw(_currentTarget.faceLandmarks, visualizeZ);
     }
 }

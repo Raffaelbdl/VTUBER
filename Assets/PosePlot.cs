@@ -79,7 +79,6 @@ public class PosePlot : MonoBehaviour
 
     public void DrawPoseLandmarkListLater(NormalizedLandmarkList poseLandmarkList)
     {
-        Debug.Log("here");
         DrawPoseLandmarkListLater(poseLandmarkList?.Landmark);
     }
 
