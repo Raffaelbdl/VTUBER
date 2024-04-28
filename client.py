@@ -6,7 +6,7 @@ from PIL import Image as I
 from PIL.Image import Image
 import numpy as np
 
-PORT = 5068
+PORT = 5065
 
 
 def init_TCP():
@@ -58,10 +58,16 @@ def load_png(path: str) -> Image:
     return I.open(path)
 
 
+import time
+
+
 def main():
-    s = init_TCP()
+    # s = init_TCP()
     # image = load_png("test.png")
-    send_image_to_unity(s, "test.png")
+    for i in range(3):
+        s = init_TCP()
+        send_image_to_unity(s, f"{i}.jpg")
+        time.sleep(1 / 1)
 
 
 if __name__ == "__main__":
