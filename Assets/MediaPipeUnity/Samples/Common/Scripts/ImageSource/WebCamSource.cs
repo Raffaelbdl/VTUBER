@@ -9,6 +9,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Windows.WebCam;
 
 #if UNITY_ANDROID
 using UnityEngine.Android;
@@ -132,7 +133,16 @@ namespace Mediapipe.Unity
 
       if (availableSources != null && availableSources.Length > 0)
       {
-        webCamDevice = availableSources[0];
+        foreach (WebCamDevice device in availableSources)
+        {
+          Debug.Log(device.name);
+          if (!device.name.Contains("Dummy"))
+          {
+            webCamDevice = device;
+            break;
+          }
+        }
+
       }
     }
 
