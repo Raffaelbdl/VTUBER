@@ -74,3 +74,4 @@ crashlytics-build.properties
 /Packages/com.github.homuler.mediapipe/
 
 .env
+/[Aa]ssets/[Tt]extMesh[ ]Pro/

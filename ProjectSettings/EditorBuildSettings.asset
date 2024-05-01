@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/vtuberfinal.unity
+    guid: a37d72cf864ac109aba48bf0764d299b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 0acf020dc552458f4910f3fb553c9a70, type: 2}
     com.unity.renderstreaming.settings: {fileID: 11400000, guid: f0bc732e95947ad9fb4a2da6a3d7c821, type: 2}
