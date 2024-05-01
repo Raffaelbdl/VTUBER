@@ -75,3 +75,4 @@ crashlytics-build.properties
 
 .env
 /[Aa]ssets/[Tt]extMesh[ ]Pro/
+.vscode
