@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/vtuberfinal.unity
+    path: Assets/Scenes/main.unity
     guid: a37d72cf864ac109aba48bf0764d299b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 0acf020dc552458f4910f3fb553c9a70, type: 2}
