@@ -1,9 +1,12 @@
-# XX
+# VTubing for Linux
+This project is proposes a simple way to animate and use a 3D model through the webcam.
+
+The output can be used as a virtual camera for most applications where webcams can be used.
 
 ## Usage
 
 Open the Unity project. 
-Import your 3D model then place it inside the scene under `VTubeModel/` in place of `placeholder_yoshiko`.
+Import your 3D model then place it inside the scene under `VTubeModel/` in place of `placeholder_model`.
 
 ![Hierarchy](resources/hierarchy.png)
 
@@ -35,3 +38,4 @@ XX relies on:
 - Mediapipe for the processing of blendshapes and pose estimation
 - Unity to capture the webcam, render the 3D model and move them
 - [pyvirtualcam](https://github.com/letmaik/pyvirtualcam) to create a virtual camera
+
