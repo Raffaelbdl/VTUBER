@@ -1,5 +1,5 @@
 # VTubing for Linux
-This project is proposes a simple way to animate and use a 3D model through the webcam.
+This project proposes a simple way to animate and use a 3D model through the webcam.
 
 The output can be used as a virtual camera for most applications where webcams can be used.
 
