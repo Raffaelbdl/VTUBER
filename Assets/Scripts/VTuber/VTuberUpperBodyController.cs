@@ -21,23 +21,21 @@ public class VTuberUpperBody : MonoBehaviour
 
     private void Update()
     {
-        model.spine.localEulerAngles = CalculateSpineRotation(); // with Z fixed
-        model.neck.localEulerAngles = CalculateNeckRotation(); // with Z fixed
+        model.SetSpineRotation(CalculateSpineRotation());
+        model.SetNeckRotation(CalculateNeckRotation());
     }
 
-    private Vector3 CalculateSpineRotation()
+    private float CalculateSpineRotation()
     {
         Vector3 shoulderLine = rightShoulder.position - leftShoulder.position;
         Vector3 shoulderOrth = new Vector3(shoulderLine.y, -shoulderLine.x, 0f);
-        float angle = Vector3.SignedAngle(Vector3.up, shoulderOrth, Vector3.back);
-        return model.spine.localEulerAngles.ChangeZ(angle);
+        return Vector3.SignedAngle(Vector3.up, shoulderOrth, Vector3.back);
     }
 
-    private Vector3 CalculateNeckRotation()
+    private float CalculateNeckRotation()
     {
         Vector3 middleShoulder = (rightShoulder.position + leftShoulder.position) / 2f;
         Vector3 neckDirection = face.position - middleShoulder;
-        float angle = Vector3.SignedAngle(Vector3.up, neckDirection, Vector3.back);
-        return model.neck.localEulerAngles.ChangeZ(angle);
+        return Vector3.SignedAngle(Vector3.up, neckDirection, Vector3.back);
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class VTuberFaceController : MonoBehaviour
 {
-    // [SerializeField] private FaceAnnotations faceAnnotations;
     [SerializeField] private BlendshapeAnnotations faceAnnotations;
     [SerializeField] private VTubingModel model;
     [SerializeField] private float mouthGapMultiplier = 1f;
@@ -13,9 +12,9 @@ public class VTuberFaceController : MonoBehaviour
 
     private void Update()
     {
-        model.meshRenderer.SetBlendShapeWeight(model.mouthBlendshapeId, CalculateMouth());
-        model.meshRenderer.SetBlendShapeWeight(model.rightEyeBlendshapeId, CalculateRightEye());
-        model.meshRenderer.SetBlendShapeWeight(model.leftEyeBlendshapeId, CalculateLeftEye());
+        model.SetMouthWeight(CalculateMouth());
+        model.SetRightEyeWeight(CalculateRightEye());
+        model.SetLeftEyeWeight(CalculateLeftEye());
     }
 
     private float CalculateMouth()
