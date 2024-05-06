@@ -34,7 +34,7 @@ You can now launch the application and start playing with it!
 
 ## How it works
 
-XX relies on:
+This tool relies on:
 - Mediapipe for the processing of blendshapes and pose estimation
 - Unity to capture the webcam, render the 3D model and move them
 - [pyvirtualcam](https://github.com/letmaik/pyvirtualcam) to create a virtual camera
